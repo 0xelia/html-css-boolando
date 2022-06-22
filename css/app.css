@@ -1,6 +1,48 @@
+/* Reset*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/*Debug*/
+
+.debug * {
+    border: solid red 3px;
+    padding: 10px;
+}
+
+.debug .container {
+    border: solid blue 3px;
+    
+}
+
+.debug .row {
+    border: solid violet 3px;
+}
+.debug .col {
+    border: solid seagreen 3px;
+}
+
+.debug .card {
+    height: 760px;
+}
+
+/*Regole generali*/
+
+.container {
+    max-width: 1500px;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.col {
+    flex-basis: calc((100% - 40px) / 3);
+}
