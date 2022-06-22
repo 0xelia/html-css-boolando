@@ -40,6 +40,14 @@ header.debug {
 
 /*Regole generali*/
 
+body {
+    font-family: 'Arial';
+}
+
+.sales-page {
+    padding: 0 60px;
+}
+
 .container {
     max-width: 1500px;
     margin: 60px auto;
@@ -57,29 +65,50 @@ header.debug {
 
 
 /* CARDS*/
-.card-pic-image {
-    position: relative;
-    min-height: 702px;
+
+.card {
+    padding-bottom: 50px;
 }
 
-.card-pic {
-    position: absolute;
+
+.card-pic-image {
+    position: relative;
+    
 }
 
 .index-1 {
-    z-index: 1;
-}
-
-.index-0 {
-    z-index: 0;
+    transition: 300ms ease-in-out;
 }
 
 .index-1:hover {
     opacity: 0;
 }
 
+.index-0 {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
 .ticket {
-    position
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    z-index: 998;
+    text-align: center;
+
+}
+
+.sale {
+    background-color: rgb(233, 41, 41);
+    display: inline-block;
+    padding: 5px 7px;
+}
+
+.category {
+    background-color: rgb(0, 116, 0);
+    display: inline-block;
+    padding: 5px 7px;
 }
 
 .badge {
@@ -91,3 +120,30 @@ header.debug {
     z-index: 999;
 }
 
+/*TEXT CARD*/
+
+.text * {
+    line-height: 1.2em;
+}
+
+.brand {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.product {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bar-price {
+    font-weight: 200;
+    text-decoration: line-through;
+    color: black;
+}
