@@ -6,12 +6,20 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
 
 /*Debug*/
 
 .debug * {
     border: solid red 3px;
     padding: 10px;
+}
+
+header.debug {
+    height: 80px;
+    background-color: orange;
 }
 
 .debug .container {
@@ -34,7 +42,7 @@
 
 .container {
     max-width: 1500px;
-    margin: 0px auto;
+    margin: 60px auto;
 }
 
 .row {
@@ -46,3 +54,40 @@
 .col {
     flex-basis: calc((100% - 40px) / 3);
 }
+
+
+/* CARDS*/
+.card-pic-image {
+    position: relative;
+    min-height: 702px;
+}
+
+.card-pic {
+    position: absolute;
+}
+
+.index-1 {
+    z-index: 1;
+}
+
+.index-0 {
+    z-index: 0;
+}
+
+.index-1:hover {
+    opacity: 0;
+}
+
+.ticket {
+    position
+}
+
+.badge {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    padding: 15px;
+    background-color: white;
+    z-index: 999;
+}
+
